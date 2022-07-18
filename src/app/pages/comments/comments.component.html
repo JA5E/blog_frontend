@@ -1,0 +1,15 @@
+<article *ngFor="let comment of comments" class="post post-large">
+
+    <div class="post-date">
+        <span class="date">{{comment.date}}</span>
+    </div>
+
+    <div class="post-content">
+
+        <p>{{comment.content}}[...]</p>
+        <div class="post-meta">
+            <span><i class="fa fa-user"></i> By <a href="#">{{comment.author}}</a> </span>
+        </div>
+
+    </div>
+</article>
